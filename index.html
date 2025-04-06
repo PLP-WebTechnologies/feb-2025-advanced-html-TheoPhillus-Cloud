@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Webpage</h1>
+
+    <!-- Ordered List with Roman Numerals -->
+    <section>
+        <h2>My Favorite Activities</h2>
+        <ol type="I">
+            <li>Learning SQL</li>
+            <li>Web Development</li>
+            <li>Exploring Git Workflows</li>
+        </ol>
+    </section>
+
+    <!-- External Image -->
+    <section>
+        <h2>Featured Image</h2>
+        <img src="https://images.pexels.com/photos/9783350/pexels-photo-9783350.jpeg" alt="Photo by Ron Lach from Pexels" width="600">
+    </section>
+
+    <!-- Table of Contacts -->
+    <section>
+        <h2>Contacts</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Theophillus</td>
+                    <td>123 Main St, Pretoria</td>
+                    <td>+27 123 456 789</td>
+                    <td>theo@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Lerato</td>
+                    <td>456 Elm St, Johannesburg</td>
+                    <td>+27 987 654 321</td>
+                    <td>lerato@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Sipho</td>
+                    <td>789 Oak St, Durban</td>
+                    <td>+27 555 666 777</td>
+                    <td>sipho@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Nhlanhla</td>
+                    <td>321 Pine St, Cape Town</td>
+                    <td>+27 444 333 222</td>
+                    <td>nhlanhla@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>Nomzamo</td>
+                    <td>654 Willow St, Port Elizabeth</td>
+                    <td>+27 111 222 333</td>
+                    <td>nomzamo@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Registration Form -->
+    <section>
+        <h2>Registration Form</h2>
+        <form>
+            <!-- Name Field -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+            <!-- Email Field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+            <!-- Password Field -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8" required><br><br>
+
+            <!-- Date Field -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <!-- Dropdown -->
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="" disabled selected>Select your country</option>
+                <option value="south-africa">South Africa</option>
+                <option value="nigeria">Nigeria</option>
+                <option value="kenya">Kenya</option>
+            </select><br><br>
+
+            <!-- Radio Buttons -->
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label><br><br>
+
+            <!-- Checkboxes -->
+            <p>Interests:</p>
+            <input type="checkbox" id="coding" name="interests" value="coding">
+            <label for="coding">Coding</label><br>
+            <input type="checkbox" id="design" name="interests" value="design">
+            <label for="design">Design</label><br>
+            <input type="checkbox" id="gaming" name="interests" value="gaming">
+            <label for="gaming">Gaming</label><br><br>
+
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </form>
+    </section>
+</body>
+</html>
